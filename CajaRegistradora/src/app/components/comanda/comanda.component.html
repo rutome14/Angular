@@ -1,0 +1,11 @@
+<h2>Comanda</h2>
+<hr>
+<p>TOTAL: {{ calcularTotal() }}€</p>
+<hr>
+<ul class="list-group">
+    <li class="list-group-item d-flex justify-content-between" *ngFor="let seleccionado of seleccionados; let indice = index">
+        <span>{{seleccionado.nombre}}</span>
+        <span>{{seleccionado.precio}}€</span>
+        <button class="btn btn-danger btn-sm" (click)="onClick(indice)">X</button>
+    </li>
+</ul>

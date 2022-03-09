@@ -1,0 +1,22 @@
+<div class="calculadora">
+    <p>{{resultado}}</p>
+    <div class="numeros">
+        <button (click)="pulsaBoton('1')">1</button>
+        <button (click)="pulsaBoton('2')">2</button>
+        <button (click)="pulsaBoton('3')">3</button>
+        <button (click)="pulsaBoton('4')">4</button>
+        <button (click)="pulsaBoton('5')">5</button>
+        <button (click)="pulsaBoton('6')">6</button>
+        <button (click)="pulsaBoton('7')">7</button>
+        <button (click)="pulsaBoton('8')">8</button>
+        <button (click)="pulsaBoton('9')">9</button>
+        <button (click)="pulsaBoton('0')">0</button>
+    </div>
+    <div class="calculos">
+        <button (click)="pulsaBoton('+')">+</button>
+        <button (click)="pulsaBoton('-')">-</button>
+        <button (click)="pulsaBoton('*')">*</button>
+        <button (click)="pulsaBoton('/')">/</button>
+        <button (click)="resolver()">=</button>
+    </div>
+</div>

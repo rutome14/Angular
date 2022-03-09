@@ -1,0 +1,18 @@
+<!-- TODAS LAS URLS de nuestra aplicación con este formato -->
+<ul>
+  <li [routerLink]="['/home']" routerLinkActive="activo">
+    Home
+  </li>
+  <li [routerLink]="['/info']" routerLinkActive="activo">
+    Información
+  </li>
+  <li [routerLink]="['/contact']" routerLinkActive="activo">
+    Contacto
+  </li>
+</ul>
+<router-outlet></router-outlet>
+<div class="botones">
+  <button (click)="onClick('/home')">HOME</button>
+  <button (click)="onClick('/info')">INFO</button>
+  <button (click)="onClick('/contact')">CONTACT</button>
+</div>

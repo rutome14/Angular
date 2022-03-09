@@ -1,0 +1,30 @@
+<div>
+    <input type="text" [(ngModel)]="campoTexto">
+    <p>{{ campoTexto }}</p>
+    <button (click)="pulsaBoton()">Cambia el texto</button>
+</div>
+<div>
+    <!-- SIN FORM -->
+    <!-- nombre, apellidos, edad -->
+    <div>
+        <label>Nombre</label>
+        <input type="text" [(ngModel)]="paciente.nombre">
+    </div>
+    <div>
+        <label>Apellidos</label>
+        <input type="text" [(ngModel)]="paciente.apellidos">
+    </div>
+    <div>
+        <label>Edad</label>
+        <input type="text" [(ngModel)]="paciente.edad">
+    </div>
+    <button (click)="enviarFormulario()">Enviar</button>
+</div>
+{{paciente | json}}
+
+<!-- Cuando pulse un botón enviamos el nuevo paciente al componente padre
+
+    - Un botón con su click y sus cosas
+    - Un Output para pasar la información del paciente al padre 
+    - En el HTML del padre, capturamos el evento que acabamos de generar
+-->

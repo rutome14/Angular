@@ -1,0 +1,15 @@
+<div class="lista-productos">
+    <h3>{{ titulo }}</h3>
+    <hr>
+    <div class="productos">
+        <div class="producto" *ngFor="let producto of productos; let indice = index;" (click)="onClick(indice)">
+            <h5>{{ producto.nombre }}</h5>
+            <p>Cantidad: {{ producto.cantidad }}</p>
+            <p>Departamento: {{producto.departamento}}</p>
+            <!-- <img [src]="'assets/images/'+ producto.departamento +'.png'"> -->
+            <img *ngIf="producto.departamento === 'carniceria'" src="assets/images/carniceria.png">
+            <img *ngIf="producto.departamento === 'panaderia'" src="assets/images/panaderia.png">
+            <img *ngIf="producto.departamento === 'hogar'" src="assets/images/hogar.png"><img *ngIf="producto.departamento === 'pescaderia'" src="assets/images/pescaderia.png">
+        </div>
+    </div>
+</div>

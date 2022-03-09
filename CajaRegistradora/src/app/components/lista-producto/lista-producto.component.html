@@ -1,0 +1,22 @@
+<!-- Dentro de este HTML únicamente puede usar las propiedades: 
+
+titulo
+productos
+
+-->
+
+<h2>{{ titulo.toUpperCase() }}</h2>
+<div class="row">
+    <div class="col-12 col-sm-6 col-md-3" *ngFor="let producto of productos" (click)="onClick(producto)">
+        <h4>{{producto.nombre}}</h4>
+        <!-- <img [src]="producto.imagen" width="100%"> -->
+        <div [ngStyle]="{ 
+            backgroundImage: 'url(' + producto.imagen + ')', 
+            width: '100%', 
+            height: '200px', 
+            backgroundSize: 'cover',
+            backgroundPosition: 'center'
+        }"></div>
+        <p>{{producto.precio}}€</p>
+    </div>
+</div>

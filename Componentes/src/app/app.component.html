@@ -1,0 +1,21 @@
+<!--<cronometro [inicio]="4" (cuentaFinalizada)="onCuentaFinalizada($event)"></cronometro>
+<cronometro [inicio]="10" (cuentaFinalizada)="onCuentaFinalizada($event)"></cronometro>
+<cronometro [inicio]="6" (cuentaFinalizada)="onCuentaFinalizada($event)"></cronometro>
+<cronometro [inicio]="2" (cuentaFinalizada)="onCuentaFinalizada($event)"></cronometro>
+
+ <calculadora></calculadora> -->
+
+<div class="cards">
+  <app-card nombre="Mario Girón" direccion="Hortaleza 35" email="mario@email.com" departamento="contabilidad" (seleccionarEmpleado)="onSeleccionarEmpleado($event)"></app-card>
+
+  <app-card nombre="Laura Gómez" direccion="Leganitos 78" email="laura@email.com" departamento="desarrollo" (seleccionarEmpleado)="onSeleccionarEmpleado($event)"></app-card>
+
+  <app-card [nombre]="empleados[0].nombre" [direccion]="empleados[0].direccion" [email]="empleados[0].email" [departamento]="empleados[0].departamento" (seleccionarEmpleado)="onSeleccionarEmpleado($event)"></app-card>
+
+  <app-card [nombre]="empleados[1].nombre" [direccion]="empleados[1].direccion" [email]="empleados[1].email" [departamento]="empleados[1].departamento" (seleccionarEmpleado)="onSeleccionarEmpleado($event)"></app-card>
+</div>
+
+
+<!-- <app-suma [num1]="9" [num2]="8" (sumaRealizada)="onSumaRealizada($event)"></app-suma>
+<app-suma [num1]="2" [num2]="998192"></app-suma>
+<app-suma [num1]="98" [num2]="87"></app-suma> -->

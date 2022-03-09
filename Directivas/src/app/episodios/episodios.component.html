@@ -1,0 +1,22 @@
+<button (click)="onClick()">Agregar episodio</button>
+<div class="episodios">
+    <div class="episodio" *ngFor="let episodio of arrEpisodios">
+        <h3>{{episodio.title}}</h3>
+        <p>{{episodio.director}}</p>
+    </div>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Director</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let episodio of arrEpisodios">
+            <td>{{episodio.title}}</td>
+            <td>{{episodio.director}}</td>
+        </tr>
+    </tbody>
+</table>

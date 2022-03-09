@@ -1,0 +1,30 @@
+<p [ngStyle]="estilosParrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, obcaecati?</p>
+
+<button (click)="cambiarColor()">Cambia Rojo</button>
+
+<select (change)="cambiaColorDesplegable($event)">
+    <option selected>Elige un color</option>
+    <option value="red">Rojo</option>
+    <option value="yellow">Amarillo</option>
+    <option value="green">Verde</option>
+    <option value="dodgerblue">Azul</option>
+</select>
+
+<input type="text" (input)="cambiaTexto($event)" />
+
+<input type="range" min="12" max="100" step="1" value="16" (input)="cambiaFontSize($event)">
+
+<!-- 
+
+    Desplegable con 4 colores (select)
+    Cuando CAMBIE el desplegable modificar la propiedad backgroundColor con el color seleccionado ($event...)
+
+ -->
+
+
+<!-- 
+
+    Campo de tipo range
+    Cuando modifique el valor, cambiamos el tamaño del texto del párrafo
+
+  -->

@@ -1,0 +1,11 @@
+<h2>Componente condicional</h2>
+<p *ngIf="mostrar">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, impedit?</p>
+<p style="display: none;">Va usté muy cargadoo al ataquerl diodeno no puedor a wan no te digo trigo</p>
+
+<button (click)="onClickMostrar()">
+    {{ mostrar ? 'Ocultar': 'Mostrar' }}
+</button>
+
+<!-- 
+    Botón. Si mostrar es true, mostrar se vuelve false. Si mostrar es false, lo ponemos true
+ -->

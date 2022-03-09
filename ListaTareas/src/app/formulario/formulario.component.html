@@ -1,0 +1,16 @@
+<div class="formulario mt-5">
+    <div class="mb-3">
+        <label>Título</label>
+        <input type="text" class="form-control" [(ngModel)]="nuevaTarea.titulo">
+    </div>
+    <div class="mb-3">
+        <label>Prioridad</label>
+        <!-- <input type="text" class="form-control" [(ngModel)]="nuevaTarea.prioridad"> -->
+        <select class="form-select" [(ngModel)]="nuevaTarea.prioridad">
+            <option value="diaria">Diaria</option>
+            <option value="mensual">Mensual</option>
+            <option value="urgente">Urgente</option>
+        </select>
+    </div>
+    <button class="btn btn-info" (click)="onClick()">Enviar</button>
+</div>

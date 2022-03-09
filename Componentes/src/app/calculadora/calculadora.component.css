@@ -1,0 +1,39 @@
+.calculadora{
+    width: 300px;
+    background-color: lightblue;
+    padding: 10px;
+}
+
+button{
+    border: 1px solid gray;
+    background-color: lightgray;
+    width: 50px;
+    height: 30px;
+    transition: .2s;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: gray;
+    color: white;
+}
+
+button:active{
+    background-color: lightgoldenrodyellow;
+}
+
+.numeros button{
+    width: 33.33%;
+}
+
+.numeros button:last-child{
+    width: 100%;
+}
+
+.calculos button{
+    width: 25%;
+}
+
+.calculos button:last-child{
+    width: 100%;
+}

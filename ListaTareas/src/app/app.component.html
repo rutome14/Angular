@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row">
+    <div class="col-4">
+      <formulario (crearTarea)="onCrearTarea($event)"></formulario>
+    </div>
+    <div class="col-8">
+      <select class="form-select" (change)="onChange($event)">
+        <option value="diaria">Diaria</option>
+        <option value="mensual">Mensual</option>
+        <option value="urgente">Urgente</option>
+      </select>
+      <listado-tareas [lista]="arrTareas"></listado-tareas>
+    </div>
+  </div>
+</div>

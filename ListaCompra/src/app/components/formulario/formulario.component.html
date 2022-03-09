@@ -1,0 +1,17 @@
+<div class="formulario">
+    <h3>Nuevo Producto</h3>
+    <hr>
+    <div class="mb-3">
+        <label class="form-label">Nombre</label>
+        <input type="text" [(ngModel)]="nuevoProducto.nombre" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Cantidad</label>
+        <input type="text" [(ngModel)]="nuevoProducto.cantidad" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Departamento</label>
+        <input type="text" [(ngModel)]="nuevoProducto.departamento" class="form-control">
+    </div>
+    <button class="btn btn-warning" (click)="onClick()">Enviar</button>
+</div>

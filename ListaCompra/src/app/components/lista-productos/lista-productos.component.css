@@ -1,0 +1,16 @@
+.lista-productos{
+    background-color: aliceblue;
+    border: 1px solid lightblue;
+    padding: 20px 40px;
+}
+
+.producto{
+    background-color: lightgray;
+    border: 1px solid gray;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.producto h5{
+    text-transform: uppercase;
+}

@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-12 col-sm-12 col-md-6 offset-md-3">
+      <app-formulario (productoCreado)="onProductoCreado($event)"></app-formulario>
+    </div>
+  </div>
+  <div class="row mt-5">
+    <div class="col-12 col-sm-12 col-md-6">
+      <app-lista-productos titulo="Pendientes" [productos]="arrProductosPendientes" (productoSeleccionado)="onProductoSeleccionado($event)">
+      </app-lista-productos>
+    </div>
+    <div class="col-12 col-sm-12 col-md-6">
+      <app-lista-productos titulo="Comprados" [productos]="arrProductosComprados" (productoSeleccionado)="onProductoSeleccionadoComprado($event)">
+      </app-lista-productos>
+    </div>
+  </div>
+</div>
