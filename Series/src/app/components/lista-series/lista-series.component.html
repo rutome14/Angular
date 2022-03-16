@@ -1,0 +1,17 @@
+<h1 class="mt-4">Series Chachis</h1>
+
+<select class="form-select" (change)="onChange($event)">
+    <option *ngFor="let canal of canales" [value]="canal">
+        {{canal}}
+    </option>
+</select>
+
+<hr>
+<div class="series row">
+    <div class="serie col-12 col-sm-6 col-md-3" *ngFor="let serie of arrSeries">
+        <h3>{{serie.titulo}}</h3>
+        <img [src]="serie.imagen">
+        <p>CANAL: {{serie.canal}}</p>
+        <button [routerLink]="['/series', serie.id]">Ver detalle</button>
+    </div>
+</div>

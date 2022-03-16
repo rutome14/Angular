@@ -1,0 +1,11 @@
+<div class="detalle" [ngClass]="{ disponible: !producto.disponible }">
+    <h3>{{producto.nombre}}</h3>
+    <hr>
+    <p>Precio: {{producto.precio}}</p>
+    <p>Stock: {{producto.stock}}</p>
+    <div *ngIf="producto.disponible">
+        <button (click)="onClick(false)">-</button>
+        <button (click)="onClick(true)">+</button>
+    </div>
+    <img [src]="producto.imagen">
+</div>

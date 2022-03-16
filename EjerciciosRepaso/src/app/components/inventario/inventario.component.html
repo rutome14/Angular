@@ -1,0 +1,16 @@
+<p>TOTAL: {{ calcularPrecioTotal() }}</p>
+<div class="productos">
+    <detalle-producto *ngFor="let prod of productos" [producto]="prod"></detalle-producto>
+</div>
+<!-- 
+    1- Colocar el inventario (FLEX)
+    2- Mirar cómo podemos calcular el precio de todo lo que tenemos en el stock
+        - Función en inventario.component.ts que haga el cálculo
+        - Dicha función se puede ejecutar en inventario.component.html 
+ -->
+
+<!-- 
+    - En cada carta calculo el precio del producto multiplicado por su stock
+    - Mediante un output devuelvo esto al padre
+    - El problema de esto....
+  -->

@@ -1,0 +1,30 @@
+<ul>
+    <li (click)="onClick('stats')">Stats</li>
+    <li (click)="onClick('calendar')">Calendar</li>
+    <li (click)="onClick('documentation')">Documentation</li>
+    <li (click)="onClick('support')">Support</li>
+    <li (click)="onClick('social')">Social</li>
+</ul>
+
+<ul>
+    <li id="1" (click)="onClickV2($event)">Stats</li>
+    <li id="2" (click)="onClickV2($event)">Calendar</li>
+    <li id="3" (click)="onClickV2($event)">Documentation</li>
+    <li id="4" (click)="onClickV2($event)">Support</li>
+    <li id="5" (click)="onClickV2($event)">Social</li>
+</ul>
+
+<!-- ¿Cómo y dónde guardo la opción pulsada? -->
+<!-- En una PROPIEDAD del TS guardamos la opción pulsada -->
+
+<p *ngIf="opcionSeleccionada === 'stats'">Contenido Stats</p>
+<p *ngIf="opcionSeleccionada === 'calendar'">Contenido Calendar</p>
+<p *ngIf="opcionSeleccionada === 'documentation'">Contenido Documentation</p>
+<p *ngIf="opcionSeleccionada === 'support'">Contenido Support</p>
+<p *ngIf="opcionSeleccionada === 'social'">Contenido Social</p>
+
+<p *ngIf="idPulsado === 1">Contenido Stats</p>
+<p *ngIf="idPulsado === 2">Contenido Calendar</p>
+<p *ngIf="idPulsado === 3">Contenido Documentation</p>
+<p *ngIf="idPulsado === 4">Contenido Support</p>
+<p *ngIf="idPulsado === 5">Contenido Social</p>

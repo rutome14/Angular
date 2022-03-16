@@ -1,0 +1,23 @@
+{{ formulario.value | json }}
+<form #formulario="ngForm" (ngSubmit)="onSubmit(formulario.value)">
+    <div class="mb-3">
+        <label class="form-label">Nombre</label>
+        <input type="text" name="nombre" class="form-control" ngModel>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Apellidos</label>
+        <input type="text" name="apellidos" class="form-control" ngModel>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Edad</label>
+        <input type="text" name="edad" class="form-control" ngModel>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Dirección</label>
+        <input type="text" name="direccion" class="form-control" ngModel>
+    </div>
+    <input type="submit" value="Enviar" class="btn btn-info">
+</form>
+
+<p #parrafo>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis optio modi nobis quo consectetur veniam et culpa laudantium vitae quam, numquam eveniet tenetur cum excepturi corporis impedit debitis. In, ea.</p>
+<button (click)="onClick()">Pulsa</button>

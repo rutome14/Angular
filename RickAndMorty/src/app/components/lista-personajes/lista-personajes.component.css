@@ -1,0 +1,28 @@
+.personajes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.personaje {
+    width: 200px;
+    margin: 10px;
+    border: 5px solid gray;
+    padding: 10px;
+}
+
+.personaje img{
+    width: 100%;
+}
+
+.rojo{
+    border-color: tomato;
+}
+
+.gris{
+    border-color: gray;
+}
+
+.verde{
+    border-color: lightgreen;
+}

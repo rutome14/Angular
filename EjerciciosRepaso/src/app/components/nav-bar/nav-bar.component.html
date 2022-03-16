@@ -1,0 +1,5 @@
+<ul [ngStyle]="{ backgroundColor: colorFondo, color: colorTexto }">
+    <li *ngFor="let seccion of secciones" (click)="onClick(seccion)">
+        {{seccion}}
+    </li>
+</ul>

@@ -1,0 +1,16 @@
+<div *ngIf="detalle">
+    <h2>{{detalle.titulo}}</h2>
+    <p>Creador: {{detalle.creador}}</p>
+    <p>Fechas: {{detalle.fechas}}</p>
+    <p>Rating: {{detalle.rating}}</p>
+    <img width="200" [src]="detalle.imagen">
+</div>
+<div *ngIf="!detalle">
+    No hay serie
+</div>
+
+<div class="personajes">
+    <div class="personaje" *ngFor="let personaje of arrPersonajes">
+        <img [src]="personaje.imagen" alt="">
+    </div>
+</div>

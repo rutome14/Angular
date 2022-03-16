@@ -1,0 +1,16 @@
+.detalle{
+    border: 1px solid dodgerblue;
+    padding: 20px 40px;
+    border-radius: 10px;
+    background-color: lightblue;
+    width: 200px;
+    margin: 5px;
+}
+
+.detalle img{
+    width: 100%;
+}
+
+.disponible{
+    border: 1px red solid;
+}

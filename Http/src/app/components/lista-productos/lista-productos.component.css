@@ -1,0 +1,22 @@
+.productos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.producto{
+    width: 250px;
+    background-color: lightblue;
+    margin: 10px;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.producto img{
+    width: 100%;
+}
