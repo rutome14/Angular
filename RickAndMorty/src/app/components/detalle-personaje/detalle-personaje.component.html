@@ -1,0 +1,18 @@
+<!-- Si tengo una propiedad que puede ser NULL, tenemos dos formas de arreglarlo:
+
+    1- Colocando una ? después del nombre de la propiedad
+    2- Mediante un *ngIf mostrando el bloque de interés úncamente si la propiedad no es NULL
+-->
+<!-- 
+<h4>OPCIÓN 1</h4>
+<h3>{{ personaje?.name }}</h3> -->
+
+<h4>OPCIÓN 2</h4>
+<div class="personaje" *ngIf="personaje">
+    <h3>{{ personaje.name }}</h3>
+    <p>{{personaje.status}}</p>
+    <img [src]="personaje.image" alt="">
+
+    <router-outlet></router-outlet>
+
+</div>

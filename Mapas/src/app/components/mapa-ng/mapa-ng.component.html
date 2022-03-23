@@ -1,0 +1,23 @@
+<agm-map [disableDefaultUI]="true" [latitude]="lat" [longitude]="lng" [zoom]="19" [fitBounds]="true" (mapClick)="onMapClick($event)" (centerChange)="onCenterChange($event)">
+
+    <agm-kml-layer url="https://datos.madrid.es/egob/catalogo/202088-0-trafico-camaras.kml"></agm-kml-layer>
+
+    <agm-kml-layer url="https://datos.madrid.es/egob/catalogo/300049-2-radares-fijos-moviles.kml"></agm-kml-layer>
+
+    <!-- Marcador con mi posición -->
+    <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+
+    <!-- Marcadores para los países -->
+    <agm-marker *ngFor="let pais of arrPaises" [latitude]="pais.latlng[0]" [longitude]="pais.latlng[1]" [agmFitBounds]="true" [iconUrl]="$any({ 
+        url: pais.flags.png, 
+        scaledSize: { width: 30, height: 20} 
+    })">
+
+        <agm-info-window>
+            <p>{{ pais.translations.spa.common }}</p>
+        </agm-info-window>
+    </agm-marker>
+
+    <!-- Marcador para los puntos seleccionados -->
+    <agm-marker *ngFor="let punto of arrPuntos" [latitude]="punto.lat" [longitude]="punto.lng"></agm-marker>
+</agm-map>
